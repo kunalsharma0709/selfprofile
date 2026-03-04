@@ -13,8 +13,9 @@ import {
   SiTensorflow,
   SiHuggingface,
   SiGit,
-  SiAmazon
 } from "react-icons/si";
+
+import { FaAws } from "react-icons/fa";
 
 export function TOOLS() {
   const tools = [
@@ -29,12 +30,11 @@ export function TOOLS() {
     { name: "TensorFlow", icon: <SiTensorflow color="#FF6F00" /> },
     { name: "HuggingFace", icon: <SiHuggingface color="#FFD21E" /> },
     { name: "Git", icon: <SiGit color="#F05032" /> },
-    { name: "AWS", icon: <SiAmazon color="#FF9900" /> },
+    { name: "AWS", icon: <FaAws color="#FF9900" /> },
   ];
 
   return (
     <div className="tools-page">
-
       <div className="tools-layout">
 
         {/* LEFT SIDE */}
@@ -63,7 +63,6 @@ export function TOOLS() {
         </div>
 
       </div>
-
     </div>
   );
 }
