@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #0d0d0d;
+  color: white;
+  /* CRITICAL: body must not have overflow hidden */
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100%;
+}

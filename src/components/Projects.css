@@ -1,0 +1,163 @@
+.projects-section {
+  margin-top: 140px;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+.projects-section h1 {
+  font-size: 70px;
+  margin: 0;
+  font-weight: 800;
+  width: 100%;
+  max-width: 900px;
+}
+
+.projects-section h2 {
+  font-size: 70px;
+  margin: 0;
+  font-weight: 800;
+  color: #1f1f1f;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* List Wrapper */
+.projects-list {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Card */
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px 30px;
+  border-radius: 18px;
+
+  text-decoration: none;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid rgba(255, 165, 0, 0.4);
+}
+
+/* Left Box */
+.project-left .project-image {
+  width: 130px;
+  height: 90px;
+  background: #181818;
+  border-radius: 14px;
+}
+
+/* Middle */
+.project-middle {
+  flex: 1;
+  margin-left: 35px;
+}
+
+.project-middle h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.project-middle p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Right Icon */
+.project-right {
+  font-size: 18px;
+  color: orange;
+  transition: 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.project-card:hover .project-right {
+  transform: translateX(5px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .projects-section h1,
+  .projects-section h2 {
+    font-size: 52px;
+  }
+
+  .projects-list {
+    margin-top: 60px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    margin-top: 80px;
+    padding: 0 16px;
+  }
+
+  .projects-section h1,
+  .projects-section h2 {
+    font-size: 38px;
+  }
+
+  .projects-list {
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 16px 18px;
+    border-radius: 14px;
+  }
+
+  /* Hide thumbnail on small screens to save space */
+  .project-left {
+    display: none;
+  }
+
+  .project-middle {
+    margin-left: 0;
+  }
+
+  .project-middle h3 {
+    font-size: 17px;
+  }
+
+  .project-middle p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section h1,
+  .projects-section h2 {
+    font-size: 28px;
+  }
+
+  .project-middle h3 {
+    font-size: 15px;
+  }
+}

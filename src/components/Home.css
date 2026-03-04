@@ -1,0 +1,155 @@
+.home-container {
+  display: flex;
+  background: #0d0d0d;
+  color: white;
+  margin-top: 70px;
+}
+
+/* LEFT SIDE - sticky */
+.home-left {
+  width: 35%;
+  background: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  padding-top: 60px;
+}
+
+/* RIGHT SIDE */
+.home-right {
+  width: 65%;
+  padding: 100px 100px;
+}
+
+/* INTRO */
+.intro h1 {
+  font-size: 90px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.intro h2 {
+  font-size: 90px;
+  font-weight: 900;
+  margin: 0;
+  color: #1f1f1f;
+}
+
+.intro p {
+  margin-top: 40px;
+  max-width: 600px;
+  font-size: 18px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 100px;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.stats h3 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.stats span {
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+/* ── Responsive ── */
+
+/* Tablet: stack layout, reduce sizes */
+@media (max-width: 1024px) {
+  .home-right {
+    padding: 60px 50px;
+  }
+
+  .intro h1,
+  .intro h2 {
+    font-size: 64px;
+  }
+
+  .stats {
+    gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .stats h3 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile: single column */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  /* Profile card: full width, no sticky */
+  .home-left {
+    width: 100%;
+    position: relative;
+    top: unset;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .home-right {
+    width: 100%;
+    padding: 30px 24px 60px;
+    box-sizing: border-box;
+  }
+
+  .intro h1,
+  .intro h2 {
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+
+  .intro p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .stats h3 {
+    font-size: 32px;
+  }
+
+  .stats span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1,
+  .intro h2 {
+    font-size: 32px;
+  }
+
+  .stats {
+    gap: 24px;
+  }
+
+  .stats h3 {
+    font-size: 26px;
+  }
+}
