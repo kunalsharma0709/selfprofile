@@ -1,5 +1,5 @@
 import profileimg from "./56e7ed58-9b58-4cae-96d8-2a3159d186f3.jpg";
-import "./ProfileCard.css";
+import "./Profilecard.css";
 
 import { FaInstagram, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
