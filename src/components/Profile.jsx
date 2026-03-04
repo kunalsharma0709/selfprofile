@@ -18,7 +18,7 @@ export function PROFILECARD() {
 
         <div className="social-icons">
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/kunalx_7"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -26,7 +26,7 @@ export function PROFILECARD() {
           </a>
 
           <a
-            href="https://x.com/yourusername"
+            href="https://x.com/Kunalx_07"
             target="_blank"
             rel="noopener noreferrer"
           >

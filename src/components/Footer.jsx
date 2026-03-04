@@ -15,7 +15,7 @@ export function Footer() {
 
         <div className="footer-icons">
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/kunalx_7"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -23,7 +23,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://x.com/yourusername"
+            href="https://x.com/Kunalx_07"
             target="_blank"
             rel="noopener noreferrer"
           >
